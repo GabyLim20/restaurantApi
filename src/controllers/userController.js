@@ -4,8 +4,7 @@ const jwt = require('jsonwebtoken')
 const fs = require('fs')
 const userSchema = require ("../middleware/validateUserMiddleware")
 
-//const databasePath = "./data/user.json"
-const databasePath = path.join(__dirname, 'data', 'user.json');
+const dataPath = path.join(__dirname, "../data/user.json")
 
 require('dotenv').config()
 const SECRET_KEY = process.env.SECRET_KEY || 'admin123'
