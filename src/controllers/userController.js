@@ -1,5 +1,5 @@
 const bodyParser = require('body-parser')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 const fs = require('fs')
 const userSchema = require ("../middleware/validateUserMiddleware")
