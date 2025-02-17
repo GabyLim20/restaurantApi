@@ -1,5 +1,6 @@
 # 🎮 Restaurante 👾  
 
+
 Este proyecto tiene como objetivo desarrollar una aplicación web para gestionar pedidos y menús en un restaurante, destacando el uso de **JavaScript**, **HTML** y **CSS**. La aplicación permite a los usuarios agregar productos a su pedido, gestionar cantidades y visualizar un resumen de su orden. Utilizando **JavaScript** para manejar la lógica de los pedidos y la interacción con el usuario, y **HTML** y **CSS** para una interfaz sencilla y atractiva. Además, el proyecto hace uso de **Git** y **GitHub** para el control de versiones, lo que facilita la colaboración y el mantenimiento del código.
 
 
