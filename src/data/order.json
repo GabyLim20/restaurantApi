@@ -1,0 +1,15 @@
+[
+  {
+    "orderId": 1,
+    "items": [
+      {
+        "item": "manzana",
+        "amount": 1
+      },
+      {
+        "item": "plátano",
+        "amount": 4
+      }
+    ]
+  }
+]

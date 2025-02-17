@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<!-- Modal Login -->
+<div class="modal fade" id="modalSignin" tabindex="-1" aria-labelledby="modalSigninLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Sign in</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5 pt-0">
+                <form id="loginForm">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Gaby">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword"
+                            placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                    <hr class="my-4">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Register-->
+<div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="modalRegisterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Imagen -->
+            <img src="assets/pic.jpg" class="w-100 rounded-top" alt="Sample photo">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalRegisterLabel">Registration Info</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="form3Example1c" class="form-label">Your Name</label>
+                        <input type="text" id="form3Example1c" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="form3Example4c" class="form-label">Password</label>
+                        <input type="password" id="form3Example4c" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container d-flex justify-content-between">
+                <img src="assets/logoB.png" alt="Logo" width="40" height="34">
+                <h1 id="name" class="text-white"></h1>
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Pedido"><i class="bi bi-grid"></i> Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ordersTableContainer">
+                            <i class="bi bi-table"></i> Order Table
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalSignin">
+                            <i class="bi bi-people"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item" id="color">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalRegister">
+                            <i class="bi bi-person-add"></i> Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-transparent-image"
+            id="imageBackground">
+            <div class="col-md-6 p-lg-5 mx-auto my-5">
+                <h1 class="display-3 fw-bold text-white">The best Restaurant</h1>
+                <h3 class="display-5 fw-bold text-white mb-3">With the best taste</h3>
+                <div class="d-flex gap-3 justify-content-center lead fw-normal">
+
+                </div>
+            </div>
+        </div>
+
+        <section class="menu container px-4 py-5" id="menu">
+            <h2 class="pb-2 border-bottom">Un poco más...</h2>
+            <div class="container-project">
+
+                <!-- GORDITAS -->
+                <a href="#Pedido" class="proyecto" target="_blank" rel="noopener noreferrer">
+                    <div class="card-inner-project">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="assets/gorditas.jpeg" alt="Gorditas">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-project">
+                        <h3>Gorditas</h3>
+                        <p class="new-amsterdam-regular">Gorditas hechas en el momento, del sabor que guste.</p>
+                        <ul>
+                            <li class="s1 text-center"><i class="bi bi-fire"></i> Mantequilla</li>
+                            <li class="s2 text-center"><i class="bi bi-bookmark-heart-fill"></i> Costilla</li>
+                            <li class="s3 text-center"><i class="bi bi-chat-heart-fill"></i> Lengua</li>
+                            <li class="s4 text-center"><i class="bi bi-heart-fill"></i> Frijoles</li>
+                            <li class="s1 text-center"><i class="bi bi-cup-hot-fill"></i> Rajas con queso</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- TACOS -->
+                <a href="#Pedido" class="proyecto" target="_blank" rel="noopener noreferrer">
+                    <div class="card-inner-project">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="assets/tacos.jpeg" alt="Tacos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-project">
+                        <h3>Tacos</h3>
+                        <p class="new-amsterdam-regular">Deliciosos tacos, con tortilla recién hecha.</p>
+                        <ul>
+                            <li class="s1 text-center"><i class="bi bi-chat-square-heart-fill"></i> Bisteck</li>
+                            <li class="s2 text-center"><i class="bi bi-chat-heart"></i> Chorizo</li>
+                            <li class="s3 text-center"><i class="bi bi-caret-up-square-fill"></i> Pastor</li>
+                            <li class="s4 text-center"><i class="bi bi-bucket-fill"></i> Suadero</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- HUEVITO -->
+                <a href="#Pedido" class="proyecto" target="_blank" rel="noopener noreferrer">
+                    <div class="card-inner-project">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="assets/Huevito.jpeg" alt="Huevos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-project">
+                        <h3>Huevito</h3>
+                        <p class="new-amsterdam-regular">Huevos con un toque de amor. Omelette al gusto.</p>
+                        <ul>
+                            <li class="s2 text-center"><i class="bi bi-balloon-heart-fill"></i> Espinacas</li>
+                            <li class="s3 text-center"><i class="bi bi-bag-heart-fill"></i> Jamón</li>
+                            <li class="s4 text-center"><i class="bi bi-fire"></i> Queso</li>
+                        </ul>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        <div class="container mt-5" id="Pedido">
+            <h2>Formulario de Pedido</h2>
+            <form id="pedidoForm" action="#" method="POST">
+                <div id="productos-container">
+                    <div class="mb-3 producto">
+                        <label for="producto" class="form-label">Product</label>
+                        <select class="form-select" id="producto" name="producto[]" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Tacos">Tacos</option>
+                            <option value="Gorditas">Gorditas</option>
+                            <option value="Huevo">Huevo</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 producto">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad[]" required min="1"
+                            value="1">
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="button" class="btn btn-secondary w-50" id="agregar-producto">Agregar otro
+                        producto</button>
+                    <button type="submit" class="btn btn-primary w-50 mt-2">Enviar Pedido</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="ordersTableContainer">
+            <table class="table" id="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">PEDIDO</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTable">
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer id="contacto" class="container-fluid p-0" data-bs-theme="dark">
+        <div class="principal-footer purple darken-3 ">
+            <div class="footer-copyright deep-purple darken-4 ">
+
+                <h6 id="app" class="display-5 fw-bold  lh-1 mb-3 text-white text-center text-shadow-1">Gabriela Limón
+                </h6>
+                <ul class="nav justify-content-center pb-3 justify-content-end list-unstyled d-flex">
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/gaby_muns/" target="_blank"
+                            class="nav-link px-2 text-body-secondary">
+                            <i class="bi bi-instagram fs-2 "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/gabylim20" target="_blank"
+                            class="nav-link px-2 text-body-secondary">
+                            <i class="bi bi-linkedin fs-2 text-primary "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/gaby.muns/" target="_blank"
+                            class="nav-link px-2 text-body-secondary">
+                            <i class="bi bi-facebook fs-2 text-primary-emphasis"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/GabyLim20" target="_blank"
+                            class="nav-link px-2 text-body-secondary">
+                            <i class="bi bi-github fs-2"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="text-center text-body-secondary">© 2025 GabLim20</p>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
