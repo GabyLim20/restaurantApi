@@ -10,14 +10,10 @@ Este proyecto tiene como objetivo desarrollar una aplicación web para gestionar
 | Estructura                     | Descripción                                                           |
 |--------------------------------|-----------------------------------------------------------------------|
 | 📁 public                 | Contiene los archivos frontend con la comunicación del script.         |
-| └─ 📁 assets         | Recursos como imágenes, fuentes o íconos.
-  |
-| └─ 📑 index.html        | Página principal del frontend.
-  |
-| └─ 📑 script.js       | Lógica de interacción en el frontend.
-  |
-| └─ 📑 style.css      | Estilos para la interfaz del usuario..
-  |
+| └─ 📁 assets         | Recursos como imágenes, fuentes o íconos.|
+| └─ 📑 index.html        | Página principal del frontend.|
+| └─ 📑 script.js       | Lógica de interacción en el frontend. |
+| └─ 📑 style.css      | Estilos para la interfaz del usuario.. |
 | 📁 src                      | Carpeta principal del backend.|
 | 📁 controllers                 | Contiene los controladores para manejar la lógica del restaurant.          |
 | └─ 📑 orderController.js          | Controlador para gestionar las órdenes.  |
